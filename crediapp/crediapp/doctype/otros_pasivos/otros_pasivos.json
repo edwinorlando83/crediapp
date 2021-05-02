@@ -1,0 +1,53 @@
+{
+ "creation": "2021-01-27 14:03:33.266320",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "monto",
+  "plazo",
+  "destino"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NOMBRE ACREEDOR",
+   "reqd": 1
+  },
+  {
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "MONTO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plazo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PLAZO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destino",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESTINO",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-01-27 14:03:33.266320",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "otros_pasivos",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

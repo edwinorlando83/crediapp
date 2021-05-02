@@ -1,0 +1,54 @@
+{
+ "creation": "2021-01-27 17:38:41.802721",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "frecuencia",
+  "valor",
+  "dias",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "frecuencia",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "FRECUENCIADE COMPRAS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "VALOR",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dias",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "CANTIDAD AL MES",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "TOTAL MENSUAL",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-04-09 07:19:39.551212",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "frecuencia_compras",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

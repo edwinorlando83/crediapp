@@ -1,0 +1,37 @@
+{
+ "creation": "2021-03-24 16:54:18.181522",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "detalle",
+  "valor"
+ ],
+ "fields": [
+  {
+   "fieldname": "detalle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Detalle",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-25 20:58:37.920180",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "garante_bienes",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

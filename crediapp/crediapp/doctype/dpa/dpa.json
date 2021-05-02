@@ -1,0 +1,94 @@
+{
+ "autoname": "field:dpa_parroq",
+ "creation": "2021-02-05 08:54:25.495613",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dpa_provin",
+  "dpa_despro",
+  "dpa_canton",
+  "dpa_descan",
+  "dpa_parroq",
+  "dpa_despar"
+ ],
+ "fields": [
+  {
+   "fieldname": "dpa_provin",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C\u00f3digo Provincia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dpa_despro",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Provincia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dpa_canton",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C\u00f3digo  Cant\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dpa_descan",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Cant\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dpa_parroq",
+   "fieldtype": "Data",
+   "label": "C\u00f3digo  Parroquia",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "dpa_despar",
+   "fieldtype": "Data",
+   "label": "Parroquia",
+   "reqd": 1
+  }
+ ],
+ "modified": "2021-02-05 08:54:42.058076",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "Dpa",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Administrador",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

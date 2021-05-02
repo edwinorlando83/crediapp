@@ -1,0 +1,62 @@
+{
+ "creation": "2021-03-24 19:53:42.548776",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "garante",
+  "conyuge",
+  "column_break_3",
+  "ci1",
+  "ci2"
+ ],
+ "fields": [
+  {
+   "fieldname": "garante",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "NOMBRE GARANTE",
+   "options": "Garantes",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "garante.conyuge",
+   "fieldname": "conyuge",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "NOMBRE C\u00d3NYUGUE",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "garanate.ci_g",
+   "fieldname": "ci1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C\u00c9DULA GARANTE",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "garante.ci_conyuge",
+   "fieldname": "ci2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C\u00c9DULA C\u00d3NYUGUE",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-24 20:07:16.193485",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "acta_comite_garantes",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

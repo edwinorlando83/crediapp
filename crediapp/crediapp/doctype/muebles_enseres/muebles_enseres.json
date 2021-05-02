@@ -1,0 +1,63 @@
+{
+ "creation": "2021-02-01 06:34:57.170436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "descripcion",
+  "numero",
+  "a\u00f1o_fabric",
+  "vunitario",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESCRIPCION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "a\u00f1o_fabric",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "A\u00d1O. FABRIC",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vunitario",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "V.UNITARIO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "numero",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "N.",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "V.COMERCIAL",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 06:49:54.300024",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "muebles_enseres",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

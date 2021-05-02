@@ -1,0 +1,62 @@
+{
+ "creation": "2021-01-26 19:41:49.607655",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "descripcion",
+  "unidad",
+  "cantidad",
+  "costo_unit",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESCRIPCION",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unidad",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "UNIDAD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cantidad",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "CANTIDAD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "costo_unit",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "COSTO UNIT.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "TOTAL",
+   "read_only": 1,
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-01 05:05:18.277856",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "inventario",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

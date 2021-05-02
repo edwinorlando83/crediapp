@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include crediapp *.css
+recursive-include crediapp *.csv
+recursive-include crediapp *.html
+recursive-include crediapp *.ico
+recursive-include crediapp *.js
+recursive-include crediapp *.json
+recursive-include crediapp *.md
+recursive-include crediapp *.png
+recursive-include crediapp *.py
+recursive-include crediapp *.svg
+recursive-include crediapp *.txt
+recursive-exclude crediapp *.pyc

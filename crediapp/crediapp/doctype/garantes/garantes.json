@@ -1,0 +1,446 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:nombreapellido_g",
+ "creation": "2021-03-24 05:02:56.968762",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "socio",
+  "hoja_trabajo",
+  "destino_de_cr\u00e9dito",
+  "column_break_3",
+  "agencia",
+  "asesor",
+  "fecha",
+  "column_break_7",
+  "monto_solicitado",
+  "plazo",
+  "cuota",
+  "datos_personales_section",
+  "nombreapellido_g",
+  "ci_g",
+  "fechanac",
+  "telefono",
+  "direccion_g",
+  "column_break_17",
+  "num_garante",
+  "provincia",
+  "canton",
+  "parroquia",
+  "barrio",
+  "actividad_econ\u00f3mica_section",
+  "actividad",
+  "antiguedad",
+  "direnego",
+  "column_break_28",
+  "provincia_neg",
+  "canton_neg",
+  "parroquia_neg",
+  "barrio_n",
+  "datos_de_c\u00f3nyugue_section",
+  "conyuge",
+  "ci_conyuge",
+  "fecha_nac_cony",
+  "parentesco",
+  "column_break_36",
+  "trabajo_cony",
+  "dirtrab_cony",
+  "nacionalidad",
+  "section_break_40",
+  "balance",
+  "activodis",
+  "activofijo",
+  "pasivo",
+  "patrimonio",
+  "column_break_46",
+  "estado_de_resultado",
+  "ingresos",
+  "otros_ingresos",
+  "cuota_de_deudas",
+  "consumo_familiar",
+  "saldo_disponible",
+  "section_break_53",
+  "garante_bienes",
+  "totalbienes",
+  "foto"
+ ],
+ "fields": [
+  {
+   "fetch_from": "hoja_trabajo.asesor",
+   "fieldname": "asesor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Asesor Negocios",
+   "options": "Asesor",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "hoja_trabajo.monto",
+   "fieldname": "monto_solicitado",
+   "fieldtype": "Currency",
+   "label": "Monto solicitado",
+   "read_only": 1
+  },
+  {
+   "fieldname": "destino_de_cr\u00e9dito",
+   "fieldtype": "Data",
+   "label": "Destino de cr\u00e9dito",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "hoja_trabajo.plazo",
+   "fieldname": "plazo",
+   "fieldtype": "Int",
+   "label": "Plazo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha de visita",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "hoja_trabajo.cuota",
+   "fieldname": "cuota",
+   "fieldtype": "Currency",
+   "label": "Cuota",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "hoja_trabajo.agencias",
+   "fieldname": "agencia",
+   "fieldtype": "Link",
+   "label": "Agencia",
+   "options": "Agencias",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datos_personales_section",
+   "fieldtype": "Section Break",
+   "label": "Datos personales del GARANTE"
+  },
+  {
+   "fieldname": "fechanac",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provincia",
+   "fieldtype": "Select",
+   "label": "Provincia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "barrio",
+   "fieldtype": "Data",
+   "label": "Barrio"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actividad",
+   "fieldtype": "Data",
+   "label": "Actividad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direnego",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n de negocios",
+   "reqd": 1
+  },
+  {
+   "fieldname": "barrio_n",
+   "fieldtype": "Data",
+   "label": "Barrio"
+  },
+  {
+   "fieldname": "conyuge",
+   "fieldtype": "Data",
+   "label": "Nombre de c\u00f3nyugue"
+  },
+  {
+   "fieldname": "fecha_nac_cony",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento"
+  },
+  {
+   "fieldname": "trabajo_cony",
+   "fieldtype": "Data",
+   "label": "Trabajo del Conyugue"
+  },
+  {
+   "fieldname": "dirtrab_cony",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n del trabajo"
+  },
+  {
+   "fieldname": "parentesco",
+   "fieldtype": "Link",
+   "label": "Parentesco del garante o co-garante del solicitante",
+   "options": "Parentesco"
+  },
+  {
+   "fieldname": "socio",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Solicitante",
+   "options": "Socio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "hoja_trabajo",
+   "fieldtype": "Link",
+   "label": "Prestamo",
+   "options": "hoja_trabajo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nombreapellido_g",
+   "fieldtype": "Data",
+   "label": "Nombre y Apellido",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ci_g",
+   "fieldtype": "Data",
+   "label": "C.I",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion_g",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n domiciliaria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "canton",
+   "fieldtype": "Select",
+   "label": "Cant\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parroquia",
+   "fieldtype": "Select",
+   "label": "Parroquia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actividad_econ\u00f3mica_section",
+   "fieldtype": "Section Break",
+   "label": "Actividad econ\u00f3mica"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "antiguedad",
+   "fieldtype": "Int",
+   "label": "Antig\u00fcedad en a\u00f1os",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provincia_neg",
+   "fieldtype": "Select",
+   "label": "Provincia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "canton_neg",
+   "fieldtype": "Select",
+   "label": "Cant\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parroquia_neg",
+   "fieldtype": "Select",
+   "label": "Parroquia",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datos_de_c\u00f3nyugue_section",
+   "fieldtype": "Section Break",
+   "label": "Datos de c\u00f3nyugue"
+  },
+  {
+   "fieldname": "nacionalidad",
+   "fieldtype": "Data",
+   "label": "Nacionalidad"
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n econ\u00f3mica financiera"
+  },
+  {
+   "default": "0",
+   "fieldname": "pasivo",
+   "fieldtype": "Currency",
+   "label": "Pasivo"
+  },
+  {
+   "default": "0",
+   "fieldname": "patrimonio",
+   "fieldtype": "Currency",
+   "label": "Patrimonio",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_46",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "estado_de_resultado",
+   "fieldtype": "Heading",
+   "label": "Estado de resultado"
+  },
+  {
+   "default": "0",
+   "fieldname": "ingresos",
+   "fieldtype": "Currency",
+   "label": "Ingresos"
+  },
+  {
+   "default": "0",
+   "fieldname": "otros_ingresos",
+   "fieldtype": "Currency",
+   "label": "Otros ingresos"
+  },
+  {
+   "default": "0",
+   "fieldname": "cuota_de_deudas",
+   "fieldtype": "Currency",
+   "label": "Cuota de deudas"
+  },
+  {
+   "default": "0",
+   "fieldname": "consumo_familiar",
+   "fieldtype": "Currency",
+   "label": "Consumo familiar"
+  },
+  {
+   "default": "0",
+   "fieldname": "saldo_disponible",
+   "fieldtype": "Currency",
+   "label": "Saldo Disponible",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "section_break_53",
+   "fieldtype": "Section Break",
+   "label": "Bienes Patrimoniales Familiares"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Heading",
+   "label": "Balance del negocio"
+  },
+  {
+   "default": "0",
+   "fieldname": "activodis",
+   "fieldtype": "Currency",
+   "label": "Activo disponible"
+  },
+  {
+   "default": "0",
+   "fieldname": "activofijo",
+   "fieldtype": "Currency",
+   "label": "Activo Fijo"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "foto"
+  },
+  {
+   "fieldname": "garante_bienes",
+   "fieldtype": "Table",
+   "label": "Lista",
+   "options": "garante_bienes"
+  },
+  {
+   "default": "0",
+   "fieldname": "totalbienes",
+   "fieldtype": "Currency",
+   "label": "TOTAL BIENES FAMILIARES",
+   "read_only": 1
+  },
+  {
+   "fieldname": "num_garante",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "# Garante",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "ci_conyuge",
+   "fieldtype": "Data",
+   "label": "C.I"
+  }
+ ],
+ "image_field": "foto",
+ "modified": "2021-03-26 05:14:32.801610",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "Garantes",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Administrador",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "nombreapellido_g",
+ "track_changes": 1
+}

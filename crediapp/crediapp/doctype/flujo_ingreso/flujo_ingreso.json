@@ -1,0 +1,53 @@
+{
+ "creation": "2021-02-06 18:20:30.726230",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "descripcion",
+  "actividad1",
+  "actividad2",
+  "total"
+ ],
+ "fields": [
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESCRIPCI\u00d3N",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actividad1",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "ACTIVIDAD 1",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actividad2",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "ACTIVIDAD 2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "TOTAL INGRESOS",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-06 18:20:30.726230",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "flujo_ingreso",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,176 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:nombre",
+ "creation": "2021-01-26 19:25:43.068499",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "cedula",
+  "fecha_nac",
+  "telefono",
+  "genero",
+  "lugar_nac",
+  "foto",
+  "column_break_6",
+  "numerosocio",
+  "actividadsocio",
+  "experienciasocio",
+  "estadocivil",
+  "datos_del_c\u00f3nyuge_section",
+  "nombreconyuge",
+  "cedulaconyuge",
+  "column_break_12",
+  "actividadconyuge",
+  "experienciaconyuge",
+  "ubicaci\u00f3n_del_socio_section",
+  "ubicacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "label": "Cedula"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono"
+  },
+  {
+   "fieldname": "foto",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "foto"
+  },
+  {
+   "fieldname": "ubicacion",
+   "fieldtype": "Geolocation",
+   "hidden": 1,
+   "label": "Ubicacion"
+  },
+  {
+   "fieldname": "actividadsocio",
+   "fieldtype": "Data",
+   "label": "Actividad"
+  },
+  {
+   "fieldname": "experienciasocio",
+   "fieldtype": "Int",
+   "label": "Experiencia (a\u00f1os)"
+  },
+  {
+   "depends_on": "eval:doc.estadocivil=='Uni\u00f3n de Hecho' ||doc.estadocivil=='Casado/a'",
+   "fieldname": "datos_del_c\u00f3nyuge_section",
+   "fieldtype": "Section Break",
+   "label": "Datos del C\u00f3nyuge"
+  },
+  {
+   "fieldname": "nombreconyuge",
+   "fieldtype": "Data",
+   "label": "Nombre c\u00f3nyuge"
+  },
+  {
+   "fieldname": "cedulaconyuge",
+   "fieldtype": "Data",
+   "label": "Cedula c\u00f3nyuge"
+  },
+  {
+   "fieldname": "actividadconyuge",
+   "fieldtype": "Data",
+   "label": "Actividad"
+  },
+  {
+   "fieldname": "experienciaconyuge",
+   "fieldtype": "Int",
+   "label": "Experiencia (a\u00f1os)"
+  },
+  {
+   "fieldname": "ubicaci\u00f3n_del_socio_section",
+   "fieldtype": "Section Break",
+   "label": "Ubicaci\u00f3n del Socio"
+  },
+  {
+   "fieldname": "fecha_nac",
+   "fieldtype": "Date",
+   "label": "Fecha de nacimiento"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "genero",
+   "fieldtype": "Link",
+   "label": "G\u00e9nero",
+   "options": "Genero",
+   "reqd": 1
+  },
+  {
+   "fieldname": "lugar_nac",
+   "fieldtype": "Data",
+   "label": "Lugar de Nacimiento"
+  },
+  {
+   "fieldname": "numerosocio",
+   "fieldtype": "Int",
+   "label": "# Socio"
+  },
+  {
+   "fieldname": "estadocivil",
+   "fieldtype": "Select",
+   "label": "Estado Civil",
+   "options": "Soltero/a\nUni\u00f3n de Hecho\nCasado/a\nDivorciado/a\nViudo/a",
+   "reqd": 1
+  }
+ ],
+ "image_field": "foto",
+ "modified": "2021-04-07 19:54:26.419532",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "Socio",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Administrador",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,81 @@
+{
+ "creation": "2021-01-27 13:57:00.112489",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "institucion",
+  "monto",
+  "saldo",
+  "section_break_4",
+  "cuota",
+  "plazo",
+  "destino"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "institucion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "INSTITUCION",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "MONTO INIC.",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "saldo",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "SALDO",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cuota",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "CUOTA",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "plazo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PLAZO",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "destino",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_preview": 1,
+   "label": "DESTINO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-05 11:39:18.673799",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "prestamos",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

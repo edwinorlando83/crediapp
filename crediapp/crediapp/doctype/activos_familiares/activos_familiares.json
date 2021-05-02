@@ -1,0 +1,61 @@
+{
+ "creation": "2021-01-27 14:07:24.173952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "descripcion",
+  "unidad",
+  "avaluo",
+  "total",
+  "observacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DESCRIPCI\u00d3N",
+   "reqd": 1
+  },
+  {
+   "fieldname": "unidad",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "METROS / A\u00d1O",
+   "reqd": 1
+  },
+  {
+   "fieldname": "avaluo",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "AVALUO COMERCIAL",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "AVALUO REAL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "observacion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OBSERVACI\u00d3N"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-04-09 08:22:19.911253",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "activos_familiares",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

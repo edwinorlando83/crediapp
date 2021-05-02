@@ -1,0 +1,68 @@
+{
+ "creation": "2021-01-26 20:02:13.097025",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "marca",
+  "placa",
+  "tipo",
+  "anio",
+  "avaluo",
+  "observacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "marca",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "MARCA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "placa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "PLACA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TIPO VEHI.",
+   "reqd": 1
+  },
+  {
+   "fieldname": "anio",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "A\u00d1O MODELO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "avaluo",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "AVALUO",
+   "reqd": 1
+  },
+  {
+   "fieldname": "observacion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OBSERVACION"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-02-06 07:39:02.316022",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "vehiculo",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

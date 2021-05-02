@@ -1,0 +1,37 @@
+{
+ "creation": "2021-03-24 17:42:15.070073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tipos_comentarios",
+  "comentario"
+ ],
+ "fields": [
+  {
+   "fieldname": "tipos_comentarios",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Titulo",
+   "options": "tipos_comentarios",
+   "reqd": 1
+  },
+  {
+   "fieldname": "comentario",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Comentario"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-03-25 21:38:49.636994",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "acta_comite_comentarios",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
