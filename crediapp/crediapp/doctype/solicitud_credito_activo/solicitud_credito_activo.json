@@ -1,0 +1,47 @@
+{
+ "creation": "2021-05-03 01:21:42.457307",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "detalle",
+  "deudor",
+  "conyuge"
+ ],
+ "fields": [
+  {
+   "fieldname": "detalle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Detalle",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "deudor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Deudor",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "conyuge",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Conyuge",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-03 01:27:41.437196",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "solicitud_credito_activo",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

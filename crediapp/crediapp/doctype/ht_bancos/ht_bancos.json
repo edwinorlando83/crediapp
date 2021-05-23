@@ -1,0 +1,46 @@
+{
+ "creation": "2021-05-04 06:45:35.784330",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instituciones",
+  "anombrede",
+  "saldo"
+ ],
+ "fields": [
+  {
+   "fieldname": "instituciones",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instituciones",
+   "reqd": 1
+  },
+  {
+   "fieldname": "anombrede",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "A nombre de",
+   "options": "TITULAR\nCONYUGE",
+   "reqd": 1
+  },
+  {
+   "fieldname": "saldo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Saldo",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-04 06:47:31.233819",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "ht_bancos",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

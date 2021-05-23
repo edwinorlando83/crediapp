@@ -1,0 +1,231 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2021-05-02 09:57:49.139529",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sec01",
+  "fecha",
+  "asesor",
+  "column_break_3",
+  "monto",
+  "plazo",
+  "sec02",
+  "destino",
+  "intervalo",
+  "datos_del_socio_section",
+  "socio",
+  "naming_series",
+  "sec_balance",
+  "solicitud_credito_activo",
+  "total_activos_deudor",
+  "total_activos_conyuge",
+  "total_activos_html",
+  "solicitud_credito_pasivo",
+  "tot_pas_lar",
+  "tot_pas_cor",
+  "html_totalpasivo",
+  "solicitud_credito_ingresos",
+  "total_ingresos_d",
+  "total_ingresos_c",
+  "html_ingresos",
+  "solicitud_credito_gastos",
+  "total_gastos",
+  "html_total_gastos",
+  "html_patrimonio"
+ ],
+ "fields": [
+  {
+   "fieldname": "sec01",
+   "fieldtype": "Section Break",
+   "label": "Datos del asesor de Cr\u00e9dito"
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asesor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Asesor",
+   "options": "Asesor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sec02",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "plazo",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Plazo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "intervalo",
+   "fieldtype": "Select",
+   "label": "Intervalo",
+   "options": "DIARIO\nSEMANAL\nQUINCENAL\nMENSUAL\nSEMESTRAL\nOTROS",
+   "reqd": 1
+  },
+  {
+   "fieldname": "destino",
+   "fieldtype": "Data",
+   "label": "Destino del Cr\u00e9dito",
+   "reqd": 1
+  },
+  {
+   "fieldname": "datos_del_socio_section",
+   "fieldtype": "Section Break",
+   "label": "Datos del Socio"
+  },
+  {
+   "fieldname": "socio",
+   "fieldtype": "Link",
+   "label": "Socio",
+   "options": "Socio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "codigo",
+   "options": "SOL-"
+  },
+  {
+   "fieldname": "sec_balance",
+   "fieldtype": "Section Break",
+   "label": "Balance General"
+  },
+  {
+   "fieldname": "solicitud_credito_activo",
+   "fieldtype": "Table",
+   "label": "Activos",
+   "options": "solicitud_credito_activo"
+  },
+  {
+   "fieldname": "solicitud_credito_pasivo",
+   "fieldtype": "Table",
+   "label": "Pasivos",
+   "options": "solicitud_credito_pasivo"
+  },
+  {
+   "fieldname": "solicitud_credito_ingresos",
+   "fieldtype": "Table",
+   "label": "Ingresos",
+   "options": "solicitud_credito_ingresos"
+  },
+  {
+   "fieldname": "solicitud_credito_gastos",
+   "fieldtype": "Table",
+   "label": "Gastos",
+   "options": "solicitud_credito_gastos"
+  },
+  {
+   "fieldname": "total_activos_html",
+   "fieldtype": "HTML",
+   "options": "<b>Total Activos: </b> Deudor: {{doc.total_activos_deudor}} C\u00f3nyuge: {{doc.total_activos_conyuge}}     Suma Total: {{doc.total_activos_deudor +doc.total_activos_conyuge }}\n\n "
+  },
+  {
+   "default": "0",
+   "fieldname": "total_activos_deudor",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "total_activos_conyuge",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "tot_pas_lar",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "tot_pas_cor",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_totalpasivo",
+   "fieldtype": "HTML",
+   "options": "Total Pasivo Corto Plazo: {{doc.tot_pas_cor}}  Total Pasivo largo Plazo: {{doc.tot_pas_lar}}   <b>Total:</b> {{doc.tot_pas_cor + doc.tot_pas_lar}} "
+  },
+  {
+   "fieldname": "html_ingresos",
+   "fieldtype": "HTML",
+   "options": "<b> Total Ingresos:</b> {{doc.total_ingresos_d + doc.total_ingresos_c}}"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_ingresos_d",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_ingresos_c",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_gastos",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_total_gastos",
+   "fieldtype": "HTML",
+   "options": "<b>Total:</b> {{doc.total_gastos}}"
+  },
+  {
+   "fieldname": "html_patrimonio",
+   "fieldtype": "HTML",
+   "options": "<h3>PATRIMONIO</h3>\n<table>\n<tbody><tr> <td> (+) Patrimonio familiar (A-P):  </td> <td> {{doc.total_activos_deudor + doc.total_activos_conyuge}}  </td> </tr>\n<tr> <td> (+) Patrimonio del negocio: </td> <td> {{doc.total_ingresos_d + doc.total_ingresos_c}}  </td> </tr>\n\n</tbody></table>"
+  }
+ ],
+ "modified": "2021-05-03 03:33:10.262178",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "solicitud_credito",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

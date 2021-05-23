@@ -1,0 +1,74 @@
+{
+ "creation": "2021-05-04 07:44:28.739204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "pisos",
+  "valorm",
+  "anombrede",
+  "direccion",
+  "hipotecado",
+  "valor"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "pisos",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Metros",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "valorm",
+   "fieldtype": "Currency",
+   "label": "Valor (m)"
+  },
+  {
+   "columns": 1,
+   "fieldname": "anombrede",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "A nombre de",
+   "options": "TITULAR\nCONYUGE",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Direccion",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "hipotecado",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Hipotecado A",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor Comercial",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-04 07:44:28.739204",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "terreno",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

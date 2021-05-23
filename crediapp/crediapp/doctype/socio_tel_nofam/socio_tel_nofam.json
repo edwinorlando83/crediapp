@@ -1,0 +1,54 @@
+{
+ "creation": "2021-05-03 01:12:53.990108",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombres",
+  "parentesco",
+  "direccion",
+  "telefono"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "APELLIDOS Y NOMBRES",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parentesco",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PARENTESCO",
+   "options": "Parentesco",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "DIRECCI\u00d3N",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "TEL\u00c9FONO",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-05-03 01:12:53.990108",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "socio_tel_nofam",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

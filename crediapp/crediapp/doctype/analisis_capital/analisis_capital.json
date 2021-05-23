@@ -1,0 +1,212 @@
+{
+ "autoname": "naming_series:",
+ "beta": 1,
+ "creation": "2021-05-04 07:33:00.745837",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha",
+  "socio",
+  "column_break_2",
+  "agencias",
+  "column_break_4",
+  "asesor",
+  "activo_corriente_section",
+  "efectivo",
+  "column_break_10",
+  "bancos",
+  "column_break_19",
+  "total_disponible",
+  "section_break_21",
+  "cuentas_por_cobrar_section",
+  "cuenta_por_cobrar",
+  "totales_html",
+  "total_inicial",
+  "total_saldo",
+  "ht_bancos",
+  "ht_inversiones",
+  "vivienda",
+  "terreno",
+  "vehiculo",
+  "maquinaria_equipo"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "socio",
+   "fieldtype": "Link",
+   "label": "Socio",
+   "options": "Socio",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "agencias",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Agencia",
+   "options": "Agencias",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "asesor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Asesor",
+   "options": "Asesor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "activo_corriente_section",
+   "fieldtype": "Section Break",
+   "label": "ACTIVO "
+  },
+  {
+   "fieldname": "efectivo",
+   "fieldtype": "Currency",
+   "label": "Caja Titular",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bancos",
+   "fieldtype": "Currency",
+   "label": "Caja C\u00f3nyuge",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "total_disponible",
+   "fieldtype": "Currency",
+   "label": "TOTAL CAJA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "cuentas_por_cobrar_section",
+   "fieldtype": "Section Break",
+   "label": "ACTIVO - CUENTAS POR COBRAR"
+  },
+  {
+   "fieldname": "cuenta_por_cobrar",
+   "fieldtype": "Table",
+   "options": "cuenta_por_cobrar"
+  },
+  {
+   "fieldname": "totales_html",
+   "fieldtype": "HTML",
+   "options": " Total Inicial : {{doc.total_inicial}}     Total Saldo: {{doc.total_saldo}}"
+  },
+  {
+   "fieldname": "total_inicial",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Inicial",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_saldo",
+   "fieldtype": "Currency",
+   "hidden": 1,
+   "label": "Total Saldo",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ht_bancos",
+   "fieldtype": "Table",
+   "label": "Bancos",
+   "options": "ht_bancos"
+  },
+  {
+   "fieldname": "ht_inversiones",
+   "fieldtype": "Table",
+   "label": "Inversiones",
+   "options": "ht_inversiones"
+  },
+  {
+   "fieldname": "vivienda",
+   "fieldtype": "Table",
+   "label": "Vivienda",
+   "options": "vivienda"
+  },
+  {
+   "fieldname": "terreno",
+   "fieldtype": "Table",
+   "label": "Terreno",
+   "options": "terreno"
+  },
+  {
+   "fieldname": "vehiculo",
+   "fieldtype": "Table",
+   "label": "vehiculo",
+   "options": "vehiculo"
+  },
+  {
+   "fieldname": "maquinaria_equipo",
+   "fieldtype": "Table",
+   "label": "Maquinaria Pesada",
+   "options": "maquinaria_equipo"
+  }
+ ],
+ "modified": "2021-05-04 07:54:01.121799",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "analisis_capital",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Administrador",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "socio",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
