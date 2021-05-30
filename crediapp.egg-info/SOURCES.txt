@@ -19,7 +19,6 @@ crediapp/config/crediapp.py
 crediapp/config/desktop.py
 crediapp/config/docs.py
 crediapp/crediapp/__init__.py
-crediapp/crediapp/custom/hoja_trabajo.json
 crediapp/crediapp/doctype/__init__.py
 crediapp/crediapp/doctype/acta_comite/__init__.py
 crediapp/crediapp/doctype/acta_comite/acta_comite.js
@@ -105,11 +104,6 @@ crediapp/crediapp/doctype/genero/genero.js
 crediapp/crediapp/doctype/genero/genero.json
 crediapp/crediapp/doctype/genero/genero.py
 crediapp/crediapp/doctype/genero/test_genero.py
-crediapp/crediapp/doctype/hoja_trabajo/__init__.py
-crediapp/crediapp/doctype/hoja_trabajo/hoja_trabajo.js
-crediapp/crediapp/doctype/hoja_trabajo/hoja_trabajo.json
-crediapp/crediapp/doctype/hoja_trabajo/hoja_trabajo.py
-crediapp/crediapp/doctype/hoja_trabajo/test_hoja_trabajo.py
 crediapp/crediapp/doctype/ht_bancos/__init__.py
 crediapp/crediapp/doctype/ht_bancos/ht_bancos.json
 crediapp/crediapp/doctype/ht_bancos/ht_bancos.py
@@ -139,6 +133,11 @@ crediapp/crediapp/doctype/nacionalidad/nacionalidad.js
 crediapp/crediapp/doctype/nacionalidad/nacionalidad.json
 crediapp/crediapp/doctype/nacionalidad/nacionalidad.py
 crediapp/crediapp/doctype/nacionalidad/test_nacionalidad.py
+crediapp/crediapp/doctype/nivel_estudios/__init__.py
+crediapp/crediapp/doctype/nivel_estudios/nivel_estudios.js
+crediapp/crediapp/doctype/nivel_estudios/nivel_estudios.json
+crediapp/crediapp/doctype/nivel_estudios/nivel_estudios.py
+crediapp/crediapp/doctype/nivel_estudios/test_nivel_estudios.py
 crediapp/crediapp/doctype/otro_activos/__init__.py
 crediapp/crediapp/doctype/otro_activos/otro_activos.json
 crediapp/crediapp/doctype/otro_activos/otro_activos.py
