@@ -6,18 +6,28 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "sec001",
   "nombre",
   "cedula",
   "fecha_nac",
-  "telefono",
+  "country",
   "genero",
-  "lugar_nac",
-  "foto",
+  "estadocivil",
+  "nivel_estudios",
+  "column_break_8",
+  "profesion",
+  "considera",
+  "discapacidad",
+  "cargasf",
+  "hijos_estudian",
   "column_break_6",
   "numerosocio",
-  "actividadsocio",
-  "experienciasocio",
-  "estadocivil",
+  "telefono_con",
+  "celular",
+  "correo",
+  "facebook",
+  "otrasredes",
+  "foto",
   "datos_del_c\u00f3nyuge_section",
   "nombreconyuge",
   "cedulaconyuge",
@@ -25,7 +35,44 @@
   "actividadconyuge",
   "experienciaconyuge",
   "ubicaci\u00f3n_del_socio_section",
-  "ubicacion"
+  "ubicacion",
+  "secsepa",
+  "decla_jura",
+  "column_break_25",
+  "disc_cony",
+  "secdir",
+  "zona",
+  "column_break_37",
+  "vivienda",
+  "secarii",
+  "duenio",
+  "parentesco",
+  "col11",
+  "anio",
+  "mes",
+  "pago_mensual",
+  "secubic",
+  "provincia",
+  "canton",
+  "parroquia",
+  "column_break_50",
+  "barrio",
+  "calles",
+  "referencia_domicilio",
+  "column_break_54",
+  "no_casa",
+  "color_casa",
+  "no_piso",
+  "secextra",
+  "pais",
+  "prov_ext",
+  "ciudad_ext",
+  "column_break_62",
+  "ident_ext",
+  "codpostal_ext",
+  "datos_del_empleo_o_negocio_del_socio_section",
+  "tipo",
+  "lugar"
  ],
  "fields": [
   {
@@ -42,11 +89,6 @@
    "label": "Cedula"
   },
   {
-   "fieldname": "telefono",
-   "fieldtype": "Data",
-   "label": "Tel\u00e9fono"
-  },
-  {
    "fieldname": "foto",
    "fieldtype": "Attach Image",
    "hidden": 1,
@@ -57,16 +99,6 @@
    "fieldtype": "Geolocation",
    "hidden": 1,
    "label": "Ubicacion"
-  },
-  {
-   "fieldname": "actividadsocio",
-   "fieldtype": "Data",
-   "label": "Actividad"
-  },
-  {
-   "fieldname": "experienciasocio",
-   "fieldtype": "Int",
-   "label": "Experiencia (a\u00f1os)"
   },
   {
    "depends_on": "eval:doc.estadocivil=='Uni\u00f3n de Hecho' ||doc.estadocivil=='Casado/a'",
@@ -120,11 +152,6 @@
    "reqd": 1
   },
   {
-   "fieldname": "lugar_nac",
-   "fieldtype": "Data",
-   "label": "Lugar de Nacimiento"
-  },
-  {
    "fieldname": "numerosocio",
    "fieldtype": "Int",
    "label": "# Socio"
@@ -135,10 +162,272 @@
    "label": "Estado Civil",
    "options": "Soltero/a\nUni\u00f3n de Hecho\nCasado/a\nDivorciado/a\nViudo/a",
    "reqd": 1
+  },
+  {
+   "fieldname": "sec001",
+   "fieldtype": "Section Break",
+   "label": " Datos de socio(a)"
+  },
+  {
+   "default": "Ecuador",
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "label": "Nacionalidad",
+   "options": "Country"
+  },
+  {
+   "depends_on": "eval:doc.estadocivil =='Divorciado/a'",
+   "fieldname": "secsepa",
+   "fieldtype": "Section Break",
+   "label": "Datos en caso de ser separado"
+  },
+  {
+   "default": "0",
+   "fieldname": "decla_jura",
+   "fieldtype": "Check",
+   "label": "Declaraci\u00f3n Juramentada "
+  },
+  {
+   "default": "0",
+   "fieldname": "disc_cony",
+   "fieldtype": "Check",
+   "label": "Disoluci\u00f3n Conyugal "
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "nivel_estudios",
+   "fieldtype": "Link",
+   "label": "Nivel de estudios",
+   "options": "nivel_estudios"
+  },
+  {
+   "fieldname": "profesion",
+   "fieldtype": "Data",
+   "label": "Profesi\u00f3n "
+  },
+  {
+   "fieldname": "considera",
+   "fieldtype": "Select",
+   "label": "Como se considera ",
+   "options": "MESTIZO\nBLANCO\nIND\u00cdGENA\nAFRO ECUATORIANO\nOTRO"
+  },
+  {
+   "default": "0",
+   "fieldname": "discapacidad",
+   "fieldtype": "Check",
+   "label": "Discapacidad"
+  },
+  {
+   "fieldname": "cargasf",
+   "fieldtype": "Data",
+   "label": "Cargas familiares"
+  },
+  {
+   "fieldname": "hijos_estudian",
+   "fieldtype": "Data",
+   "label": "\u00bfCu\u00e1ntos hijos estudian?"
+  },
+  {
+   "fieldname": "telefono_con",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono convencional:"
+  },
+  {
+   "fieldname": "celular",
+   "fieldtype": "Data",
+   "label": "Celular"
+  },
+  {
+   "fieldname": "correo",
+   "fieldtype": "Data",
+   "label": "Correos electr\u00f3nicos"
+  },
+  {
+   "fieldname": "facebook",
+   "fieldtype": "Data",
+   "label": "Registaro en el Facebook "
+  },
+  {
+   "fieldname": "otrasredes",
+   "fieldtype": "Data",
+   "label": "Otras redes sociales "
+  },
+  {
+   "fieldname": "secdir",
+   "fieldtype": "Section Break",
+   "label": "Direcci\u00f3n del domicilio Local        "
+  },
+  {
+   "fieldname": "zona",
+   "fieldtype": "Select",
+   "label": "Zona",
+   "options": "URBANO\nRURAL"
+  },
+  {
+   "fieldname": "vivienda",
+   "fieldtype": "Select",
+   "label": "Vivienda",
+   "options": "PROPIA\nARRENDADA\nFAMILIAR\nOTROS"
+  },
+  {
+   "depends_on": "eval:doc.vivienda =='ARRENDADA' || doc.vivienda =='FAMILIAR'",
+   "fieldname": "secarii",
+   "fieldtype": "Section Break",
+   "label": "Datos en caso de vivir en arrendado o familiar"
+  },
+  {
+   "fieldname": "duenio",
+   "fieldtype": "Data",
+   "label": "Nombre del due\u00f1o de la vivienda"
+  },
+  {
+   "fieldname": "parentesco",
+   "fieldtype": "Data",
+   "label": "Parentesco"
+  },
+  {
+   "fieldname": "anio",
+   "fieldtype": "Data",
+   "label": "Tiempo de arriendo A\u00f1os"
+  },
+  {
+   "fieldname": "mes",
+   "fieldtype": "Data",
+   "label": "Tiempo de arriendo Meses "
+  },
+  {
+   "fieldname": "pago_mensual",
+   "fieldtype": "Data",
+   "label": "Pago mensual arriendo"
+  },
+  {
+   "fieldname": "col11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "secubic",
+   "fieldtype": "Section Break",
+   "label": "Ubicaci\u00f3n del socio"
+  },
+  {
+   "fieldname": "provincia",
+   "fieldtype": "Data",
+   "label": "Provincia"
+  },
+  {
+   "fieldname": "canton",
+   "fieldtype": "Data",
+   "label": "Cant\u00f3n"
+  },
+  {
+   "fieldname": "parroquia",
+   "fieldtype": "Data",
+   "label": "Parroquia"
+  },
+  {
+   "fieldname": "barrio",
+   "fieldtype": "Data",
+   "label": "Barrio "
+  },
+  {
+   "fieldname": "calles",
+   "fieldtype": "Data",
+   "label": "Calles"
+  },
+  {
+   "fieldname": "referencia_domicilio",
+   "fieldtype": "Data",
+   "label": "Referencia domicilio "
+  },
+  {
+   "fieldname": "no_casa",
+   "fieldtype": "Data",
+   "label": "No de casa"
+  },
+  {
+   "fieldname": "color_casa",
+   "fieldtype": "Data",
+   "label": "Color de la casa"
+  },
+  {
+   "fieldname": "no_piso",
+   "fieldtype": "Data",
+   "label": "No de piso "
+  },
+  {
+   "fieldname": "secextra",
+   "fieldtype": "Section Break",
+   "label": "Dato en caso mantenga domicilio en el Extranjero        "
+  },
+  {
+   "fieldname": "pais",
+   "fieldtype": "Data",
+   "label": "Pa\u00eds"
+  },
+  {
+   "fieldname": "prov_ext",
+   "fieldtype": "Data",
+   "label": "Provincia"
+  },
+  {
+   "fieldname": "ciudad_ext",
+   "fieldtype": "Data",
+   "label": "Ciudad"
+  },
+  {
+   "fieldname": "ident_ext",
+   "fieldtype": "Data",
+   "label": "N\u00famero de identificaci\u00f3n"
+  },
+  {
+   "fieldname": "codpostal_ext",
+   "fieldtype": "Data",
+   "label": "C\u00f3digo postal"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_54",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "datos_del_empleo_o_negocio_del_socio_section",
+   "fieldtype": "Section Break",
+   "label": "Datos del empleo o negocio del socio"
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "EMPLEADO\nNEGOCIO PROPIO"
+  },
+  {
+   "default": "NACIONAL",
+   "fieldname": "lugar",
+   "fieldtype": "Select",
+   "label": "Lugar",
+   "options": "NACIONAL\nEXTRANJERO"
   }
  ],
  "image_field": "foto",
- "modified": "2021-04-07 19:54:26.419532",
+ "modified": "2021-05-30 12:22:12.805445",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Socio",

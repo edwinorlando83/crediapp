@@ -2,6 +2,7 @@
  "autoname": "naming_series:",
  "creation": "2021-05-02 09:57:49.139529",
  "doctype": "DocType",
+ "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -206,7 +207,7 @@
    "options": "<h3>PATRIMONIO</h3>\n<table>\n<tbody><tr> <td> (+) Patrimonio familiar (A-P):  </td> <td> {{doc.total_activos_deudor + doc.total_activos_conyuge}}  </td> </tr>\n<tr> <td> (+) Patrimonio del negocio: </td> <td> {{doc.total_ingresos_d + doc.total_ingresos_c}}  </td> </tr>\n\n</tbody></table>"
   }
  ],
- "modified": "2021-05-03 03:33:10.262178",
+ "modified": "2021-05-30 11:21:00.756420",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "solicitud_credito",
