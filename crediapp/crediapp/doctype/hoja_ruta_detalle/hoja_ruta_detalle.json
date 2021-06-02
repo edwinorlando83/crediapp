@@ -1,0 +1,84 @@
+{
+ "creation": "2021-06-02 18:26:11.952289",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombre",
+  "contacto",
+  "direccion",
+  "tipo",
+  "monto",
+  "fecha",
+  "comentario"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre y Apellido",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "contacto",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contacto",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Direcciones",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Tipo",
+   "options": "AHORRO\nCR\u00c9DITOS\nINVERSIONES",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de compromiso",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "comentario",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Comentario"
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-02 18:29:45.566376",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "hoja_ruta_detalle",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

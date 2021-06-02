@@ -6,5 +6,5 @@ from __future__ import unicode_literals
 # import frappe
 from frappe.model.document import Document
 
-class acta_comite(Document):
+class hoja_ruta(Document):
 	pass
