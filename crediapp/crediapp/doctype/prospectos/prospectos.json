@@ -32,7 +32,9 @@
   "column_break_20",
   "fecha_vencimiento",
   "section_break_24",
-  "usuario"
+  "usuario",
+  "ubicaci\u00f3n_section",
+  "ubicacion"
  ],
  "fields": [
   {
@@ -179,9 +181,18 @@
    "fieldname": "canton",
    "fieldtype": "Select",
    "label": "Ciudad"
+  },
+  {
+   "fieldname": "ubicaci\u00f3n_section",
+   "fieldtype": "Section Break",
+   "label": "Ubicaci\u00f3n"
+  },
+  {
+   "fieldname": "ubicacion",
+   "fieldtype": "Geolocation"
   }
  ],
- "modified": "2021-06-03 08:36:46.024780",
+ "modified": "2021-06-03 12:09:02.603566",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Prospectos",

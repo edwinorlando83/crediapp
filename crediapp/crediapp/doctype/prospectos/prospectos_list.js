@@ -4,7 +4,7 @@
 	onload: function(listview) {		 
 	 
 	 let disabled = frappe.user.has_role("Usuario Administrador")
-		$('[data-fieldname="usuario"]').attr("disabled",!disabled);
+	 $('[data-fieldname="usuario"]').attr("disabled",!disabled);
 		
 	}
 };
