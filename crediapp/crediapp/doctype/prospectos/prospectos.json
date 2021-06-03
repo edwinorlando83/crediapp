@@ -1,0 +1,228 @@
+{
+ "autoname": "field:nombrecompleto",
+ "creation": "2021-06-02 19:48:02.273533",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "fecha",
+  "tipo",
+  "cedula",
+  "apellidos",
+  "nombres",
+  "col1",
+  "celular",
+  "nombrecompleto",
+  "telefono",
+  "direccion",
+  "referencia",
+  "column_break_4",
+  "provincia",
+  "canton",
+  "parroquia",
+  "telefono_referencia",
+  "celular_referencia",
+  "section_break_16",
+  "monto",
+  "institucion",
+  "column_break_21",
+  "taza",
+  "plazo",
+  "column_break_20",
+  "fecha_vencimiento",
+  "section_break_24",
+  "usuario"
+ ],
+ "fields": [
+  {
+   "fieldname": "cedula",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "C\u00c9DULA",
+   "reqd": 1
+  },
+  {
+   "fieldname": "apellidos",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Apellidos",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provincia",
+   "fieldtype": "Select",
+   "label": "Provincia"
+  },
+  {
+   "fieldname": "parroquia",
+   "fieldtype": "Select",
+   "label": "Parroquia"
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "label": "Direccion",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono "
+  },
+  {
+   "fieldname": "celular",
+   "fieldtype": "Data",
+   "label": "Celular",
+   "reqd": 1
+  },
+  {
+   "fieldname": "referencia",
+   "fieldtype": "Data",
+   "label": "Referencia"
+  },
+  {
+   "fieldname": "telefono_referencia",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono referencia"
+  },
+  {
+   "fieldname": "celular_referencia",
+   "fieldtype": "Data",
+   "label": "Celular referencia"
+  },
+  {
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "label": "Monto"
+  },
+  {
+   "fieldname": "institucion",
+   "fieldtype": "Data",
+   "label": "Institucion"
+  },
+  {
+   "fieldname": "fecha_vencimiento",
+   "fieldtype": "Date",
+   "label": "Fecha vencimiento"
+  },
+  {
+   "fieldname": "taza",
+   "fieldtype": "Data",
+   "label": "Taza"
+  },
+  {
+   "fieldname": "plazo",
+   "fieldtype": "Data",
+   "label": "Plazo"
+  },
+  {
+   "fieldname": "nombrecompleto",
+   "fieldtype": "Data",
+   "label": "Nombre completo",
+   "read_only": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_20",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_24",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "usuario",
+   "fieldtype": "Link",
+   "label": "Usuario",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "col1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tipo",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "AHORRO\nCR\u00c9DITOS\nINVERSIONES"
+  },
+  {
+   "default": "Today",
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "canton",
+   "fieldtype": "Select",
+   "label": "Ciudad"
+  }
+ ],
+ "modified": "2021-06-02 20:18:14.955534",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "Prospectos",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ASESOR",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Usuario Administrador",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

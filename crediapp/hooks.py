@@ -31,7 +31,7 @@ app_license = "MIT"
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
-doctype_js = {"Socio" : "public/js/utils.js"  }
+doctype_js = {"Prospectos" : "public/js/utils.js"  }
 
 # Home Pages
 # ----------
