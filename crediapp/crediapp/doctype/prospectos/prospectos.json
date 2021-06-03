@@ -161,6 +161,7 @@
   {
    "fieldname": "tipo",
    "fieldtype": "Select",
+   "in_standard_filter": 1,
    "label": "Tipo",
    "options": "AHORRO\nCR\u00c9DITOS\nINVERSIONES"
   },
@@ -180,7 +181,7 @@
    "label": "Ciudad"
   }
  ],
- "modified": "2021-06-03 08:03:32.793888",
+ "modified": "2021-06-03 08:36:46.024780",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Prospectos",
