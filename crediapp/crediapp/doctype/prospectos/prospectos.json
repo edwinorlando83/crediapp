@@ -149,6 +149,7 @@
   {
    "fieldname": "usuario",
    "fieldtype": "Link",
+   "in_standard_filter": 1,
    "label": "Usuario",
    "options": "User",
    "read_only": 1
@@ -179,7 +180,7 @@
    "label": "Ciudad"
   }
  ],
- "modified": "2021-06-02 20:18:14.955534",
+ "modified": "2021-06-03 08:03:32.793888",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Prospectos",

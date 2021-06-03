@@ -69,13 +69,13 @@ doctype_js = {"Prospectos" : "public/js/utils.js"  }
 # -----------
 # Permissions evaluated in scripted ways
 
-# permission_query_conditions = {
-# 	"Event": "frappe.desk.doctype.event.event.get_permission_query_conditions",
+#permission_query_conditions = {
+# 	"Prospectos": "crediapp.crediapp.doctype.prospectos.prospectos.get_permission_query_conditions",
 # }
 #
-# has_permission = {
-# 	"Event": "frappe.desk.doctype.event.event.has_permission",
-# }
+#has_permission = {
+#"Prospectos": "crediapp.crediapp.doctype.prospectos.prospectos.has_permission",
+#}
 
 # Document Events
 # ---------------
