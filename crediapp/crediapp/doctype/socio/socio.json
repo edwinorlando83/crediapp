@@ -114,7 +114,31 @@
   "cony_celular",
   "cony_correo",
   "cony_facebook",
-  "cony_redes"
+  "cony_redes",
+  "datos_del_empleo_o_negocio_para_el_conyugue_section",
+  "tipo_emp_cony",
+  "lugar_emp_cony",
+  "nom_emp_cony",
+  "activ_emp_cony",
+  "column_break_114",
+  "cargo_emp_cony",
+  "tiemp_emp_cony",
+  "sueld_emp_cony",
+  "data_117",
+  "prov_emp_cony",
+  "cant_emp_cony",
+  "parr_emp_cony",
+  "barr_emp_cony",
+  "column_break_123",
+  "call_emp_cony",
+  "ref_emp_cony",
+  "telf_emp_cony",
+  "datos_adicionale_en_caso_de_ser_empleados_section",
+  "repre_emp_cony",
+  "column_break_129",
+  "carg_emp_cony",
+  "column_break_131",
+  "tel_repr_emp_cony"
  ],
  "fields": [
   {
@@ -128,7 +152,8 @@
   {
    "fieldname": "cedula",
    "fieldtype": "Data",
-   "label": "Cedula"
+   "label": "Cedula",
+   "reqd": 1
   },
   {
    "fieldname": "foto",
@@ -667,10 +692,128 @@
   {
    "fieldname": "column_break_102",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "datos_del_empleo_o_negocio_para_el_conyugue_section",
+   "fieldtype": "Section Break",
+   "label": "DATOS DEL EMPLEO O NEGOCIO PARA EL CONYUGUE"
+  },
+  {
+   "fieldname": "tipo_emp_cony",
+   "fieldtype": "Select",
+   "label": "Tipo",
+   "options": "EMPLEADO\nNEGOCIO PROPIO"
+  },
+  {
+   "fieldname": "lugar_emp_cony",
+   "fieldtype": "Select",
+   "label": "Lugar",
+   "options": "NACIONAL\nEXTRANJERO"
+  },
+  {
+   "fieldname": "nom_emp_cony",
+   "fieldtype": "Data",
+   "label": "Nombre empresa/negocio"
+  },
+  {
+   "fieldname": "activ_emp_cony",
+   "fieldtype": "Data",
+   "label": "Actividad de la empresa/negocio"
+  },
+  {
+   "fieldname": "cargo_emp_cony",
+   "fieldtype": "Data",
+   "label": "Cargo"
+  },
+  {
+   "fieldname": "tiemp_emp_cony",
+   "fieldtype": "Date",
+   "label": "Tiempo de trabajo"
+  },
+  {
+   "fieldname": "sueld_emp_cony",
+   "fieldtype": "Currency",
+   "label": "Sueldo o utilidad del negocio mensual$"
+  },
+  {
+   "fieldname": "data_117",
+   "fieldtype": "Section Break",
+   "label": "Direcci\u00f3n del empleo/negocio"
+  },
+  {
+   "fieldname": "prov_emp_cony",
+   "fieldtype": "Data",
+   "label": "Provincia"
+  },
+  {
+   "fieldname": "cant_emp_cony",
+   "fieldtype": "Data",
+   "label": "Cant\u00f3n"
+  },
+  {
+   "fieldname": "parr_emp_cony",
+   "fieldtype": "Data",
+   "label": "Parroquia"
+  },
+  {
+   "fieldname": "barr_emp_cony",
+   "fieldtype": "Data",
+   "label": "Barrio"
+  },
+  {
+   "fieldname": "call_emp_cony",
+   "fieldtype": "Data",
+   "label": "Calles"
+  },
+  {
+   "fieldname": "ref_emp_cony",
+   "fieldtype": "Data",
+   "label": "Referencias trabajo/negocio"
+  },
+  {
+   "fieldname": "telf_emp_cony",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9f./cel.Emprea"
+  },
+  {
+   "fieldname": "datos_adicionale_en_caso_de_ser_empleados_section",
+   "fieldtype": "Section Break",
+   "label": "Datos adicionale en caso de ser empleados"
+  },
+  {
+   "fieldname": "repre_emp_cony",
+   "fieldtype": "Data",
+   "label": "Nombre Representante legal o Recuros humanos"
+  },
+  {
+   "fieldname": "carg_emp_cony",
+   "fieldtype": "Data",
+   "label": "Cargo"
+  },
+  {
+   "fieldname": "tel_repr_emp_cony",
+   "fieldtype": "Data",
+   "label": "Telf./cel"
+  },
+  {
+   "fieldname": "column_break_114",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_123",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_129",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_131",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "foto",
- "modified": "2021-05-30 13:36:08.632830",
+ "modified": "2021-06-13 16:58:35.162806",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Socio",

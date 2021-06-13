@@ -16,7 +16,9 @@ frappe.ui.form.on('Socio', {
 
 			frappe.throw("Cedula incorrecto del socio");
 		}
-		if (validarCedula(frm.doc.cedulaconyuge) == 0) {
+
+	 
+		if ( frm.doc.cedulaconyuge && validarCedula(frm.doc.cedulaconyuge) == 0) {
 
 			frappe.throw("Cedula incorrecto del conyuge");
 		}

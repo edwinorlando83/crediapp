@@ -2,7 +2,7 @@
  "autoname": "naming_series:",
  "creation": "2021-06-02 18:15:04.466901",
  "doctype": "DocType",
- "document_type": "Document",
+ "document_type": "System",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -65,7 +65,7 @@
    "options": "hoja_ruta_detalle"
   }
  ],
- "modified": "2021-06-02 19:18:52.364732",
+ "modified": "2021-06-13 17:04:48.730738",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "hoja_ruta",

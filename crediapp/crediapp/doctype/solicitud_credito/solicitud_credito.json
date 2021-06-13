@@ -43,6 +43,7 @@
    "label": "Datos del asesor de Cr\u00e9dito"
   },
   {
+   "default": "Today",
    "fieldname": "fecha",
    "fieldtype": "Date",
    "in_list_view": 1,
@@ -207,7 +208,7 @@
    "options": "<h3>PATRIMONIO</h3>\n<table>\n<tbody><tr> <td> (+) Patrimonio familiar (A-P):  </td> <td> {{doc.total_activos_deudor + doc.total_activos_conyuge}}  </td> </tr>\n<tr> <td> (+) Patrimonio del negocio: </td> <td> {{doc.total_ingresos_d + doc.total_ingresos_c}}  </td> </tr>\n\n</tbody></table>"
   }
  ],
- "modified": "2021-05-30 11:21:00.756420",
+ "modified": "2021-06-13 16:47:48.621309",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "solicitud_credito",
