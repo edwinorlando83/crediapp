@@ -1,42 +1,40 @@
 {
- "creation": "2021-05-04 06:45:35.784330",
+ "creation": "2021-06-13 20:49:14.917679",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "instituciones",
-  "anombrede",
-  "saldo"
+  "detalle",
+  "marca",
+  "valor"
  ],
  "fields": [
   {
-   "fieldname": "instituciones",
+   "fieldname": "detalle",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Instituciones",
+   "label": "Detalle",
    "reqd": 1
   },
   {
-   "fieldname": "anombrede",
-   "fieldtype": "Select",
+   "fieldname": "marca",
+   "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "A nombre de",
-   "options": "TITULAR\nCONYUGE",
-   "reqd": 1
+   "label": "Marca"
   },
   {
-   "fieldname": "saldo",
+   "fieldname": "valor",
    "fieldtype": "Currency",
    "in_list_view": 1,
-   "label": "Saldo",
+   "label": "Valor",
    "reqd": 1
   }
  ],
  "istable": 1,
- "modified": "2021-06-13 20:20:52.189315",
+ "modified": "2021-06-13 20:55:41.249940",
  "modified_by": "Administrator",
  "module": "crediapp",
- "name": "ht_bancos",
+ "name": "electrodomesticos",
  "owner": "Administrator",
  "permissions": [],
  "quick_entry": 1,

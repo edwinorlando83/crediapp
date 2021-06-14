@@ -34,14 +34,14 @@
   },
   {
    "fieldname": "saldo",
-   "fieldtype": "Data",
+   "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "Saldo",
    "reqd": 1
   }
  ],
  "istable": 1,
- "modified": "2021-05-04 06:48:35.139445",
+ "modified": "2021-06-13 20:26:30.635915",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "ht_inversiones",

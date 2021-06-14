@@ -14,23 +14,38 @@
   "column_break_4",
   "asesor",
   "activo_corriente_section",
-  "efectivo",
+  "cajat",
   "column_break_10",
-  "bancos",
+  "cajac",
   "column_break_19",
-  "total_disponible",
+  "total_caja",
   "section_break_21",
   "cuentas_por_cobrar_section",
   "cuenta_por_cobrar",
+  "t_cuenta_por_cobrar",
   "totales_html",
-  "total_inicial",
-  "total_saldo",
   "ht_bancos",
+  "t_ht_bancos",
+  "html_ht_bancos",
   "ht_inversiones",
+  "t_ht_inversiones",
+  "html_ht_inversiones",
   "vivienda",
+  "t_vivienda",
+  "html_vivienda",
   "terreno",
+  "t_terreno",
+  "html_terreno",
   "vehiculo",
-  "maquinaria_equipo"
+  "t_vehiculo",
+  "html_vehiculo",
+  "maquinaria_equipo",
+  "t_maquinaria_equipo",
+  "html_maquinaria_equipo",
+  "naming_series",
+  "electrodomesticos",
+  "t_electrodomesticos",
+  "html_electrodomesticos"
  ],
  "fields": [
   {
@@ -76,41 +91,21 @@
    "label": "ACTIVO "
   },
   {
-   "fieldname": "efectivo",
-   "fieldtype": "Currency",
-   "label": "Caja Titular",
-   "reqd": 1
-  },
-  {
    "fieldname": "column_break_10",
    "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "bancos",
-   "fieldtype": "Currency",
-   "label": "Caja C\u00f3nyuge",
-   "reqd": 1
   },
   {
    "fieldname": "column_break_19",
    "fieldtype": "Column Break"
   },
   {
-   "default": "0",
-   "fieldname": "total_disponible",
-   "fieldtype": "Currency",
-   "label": "TOTAL CAJA",
-   "read_only": 1
-  },
-  {
    "fieldname": "section_break_21",
    "fieldtype": "Section Break"
   },
   {
-   "collapsible": 1,
    "fieldname": "cuentas_por_cobrar_section",
    "fieldtype": "Section Break",
-   "label": "ACTIVO - CUENTAS POR COBRAR"
+   "label": "CUENTAS O DOCUMENTOS POR COBRAR"
   },
   {
    "fieldname": "cuenta_por_cobrar",
@@ -120,22 +115,7 @@
   {
    "fieldname": "totales_html",
    "fieldtype": "HTML",
-   "options": " Total Inicial : {{doc.total_inicial}}     Total Saldo: {{doc.total_saldo}}"
-  },
-  {
-   "fieldname": "total_inicial",
-   "fieldtype": "Currency",
-   "hidden": 1,
-   "label": "Total Inicial",
-   "read_only": 1
-  },
-  {
-   "default": "0",
-   "fieldname": "total_saldo",
-   "fieldtype": "Currency",
-   "hidden": 1,
-   "label": "Total Saldo",
-   "read_only": 1
+   "options": "<b> Total Cuentas por Cobrar : </b>{{doc.t_cuenta_por_cobrar}}    "
   },
   {
    "fieldname": "ht_bancos",
@@ -164,7 +144,7 @@
   {
    "fieldname": "vehiculo",
    "fieldtype": "Table",
-   "label": "vehiculo",
+   "label": "Veh\u00edculo ",
    "options": "vehiculo"
   },
   {
@@ -172,9 +152,115 @@
    "fieldtype": "Table",
    "label": "Maquinaria Pesada",
    "options": "maquinaria_equipo"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Data",
+   "label": "Codigo",
+   "options": "AC-"
+  },
+  {
+   "fieldname": "cajat",
+   "fieldtype": "Currency",
+   "label": "Caja Titular",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cajac",
+   "fieldtype": "Currency",
+   "label": "Caja C\u00f3nyuge",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "total_caja",
+   "fieldtype": "Currency",
+   "label": "TOTAL CAJA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "t_cuenta_por_cobrar",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "t_ht_bancos",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_ht_bancos",
+   "fieldtype": "HTML",
+   "options": "<b>Total Bancos: <b>{{doc.t_ht_bancos}}    </b></b>"
+  },
+  {
+   "fieldname": "t_ht_inversiones",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_ht_inversiones",
+   "fieldtype": "HTML",
+   "options": "<b> Total Inversiones : </b>{{doc.t_ht_inversiones}}    "
+  },
+  {
+   "fieldname": "t_vivienda",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_vivienda",
+   "fieldtype": "HTML",
+   "options": "<b> Total Vivienda: </b>{{doc.t_vivienda}}    "
+  },
+  {
+   "fieldname": "t_terreno",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_terreno",
+   "fieldtype": "HTML",
+   "options": "<b> Total Terreno: </b>{{doc.t_terreno}}    "
+  },
+  {
+   "fieldname": "t_vehiculo",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_vehiculo",
+   "fieldtype": "HTML",
+   "options": "<b> Total Veh\u00edculo : </b>{{doc.t_vehiculo}}    "
+  },
+  {
+   "fieldname": "t_maquinaria_equipo",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_maquinaria_equipo",
+   "fieldtype": "HTML",
+   "options": "<b> Total Maquinaria Pesada: </b>{{doc.t_maquinaria_equipo}}    "
+  },
+  {
+   "fieldname": "electrodomesticos",
+   "fieldtype": "Table",
+   "label": "Electrodom\u00e9sticos ",
+   "options": "electrodomesticos"
+  },
+  {
+   "fieldname": "t_electrodomesticos",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_electrodomesticos",
+   "fieldtype": "HTML",
+   "options": "<b> Total Electrodom\u00e9sticos : </b>{{doc.t_electrodomesticos}}    "
   }
  ],
- "modified": "2021-05-04 07:54:01.121799",
+ "modified": "2021-06-13 20:56:36.694939",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "analisis_capital",
