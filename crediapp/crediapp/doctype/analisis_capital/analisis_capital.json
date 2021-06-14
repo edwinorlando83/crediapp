@@ -45,7 +45,28 @@
   "naming_series",
   "electrodomesticos",
   "t_electrodomesticos",
-  "html_electrodomesticos"
+  "html_electrodomesticos",
+  "sec_acdif",
+  "acciones",
+  "t_acciones",
+  "html_acciones",
+  "sec_otrosact",
+  "ganadera",
+  "t_ganadera",
+  "html_ganadera",
+  "sec_pasivos",
+  "encabezado",
+  "deudas_financieras",
+  "t_monto",
+  "t_cuota",
+  "html_total",
+  "deudas_financierasc",
+  "t_montoc",
+  "t_cuotac",
+  "html_totalc",
+  "otras_cuentas",
+  "t_otras_cuentas",
+  "html_otras_cuentas"
  ],
  "fields": [
   {
@@ -258,9 +279,118 @@
    "fieldname": "html_electrodomesticos",
    "fieldtype": "HTML",
    "options": "<b> Total Electrodom\u00e9sticos : </b>{{doc.t_electrodomesticos}}    "
+  },
+  {
+   "fieldname": "sec_acdif",
+   "fieldtype": "Section Break",
+   "label": "ACTIVOS DIFERIDOS"
+  },
+  {
+   "fieldname": "acciones",
+   "fieldtype": "Table",
+   "label": "Acciones",
+   "options": "acciones"
+  },
+  {
+   "fieldname": "t_acciones",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_acciones",
+   "fieldtype": "HTML",
+   "options": "<b> Total Acciones: </b>{{doc.t_acciones}}    "
+  },
+  {
+   "fieldname": "sec_otrosact",
+   "fieldtype": "Section Break",
+   "label": "OTROS ACTIVOS"
+  },
+  {
+   "fieldname": "ganadera",
+   "fieldtype": "Table",
+   "label": "Ganaderia",
+   "options": "ganadera"
+  },
+  {
+   "fieldname": "t_ganadera",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_ganadera",
+   "fieldtype": "HTML",
+   "options": "<b> Total Ganaderia: </b>{{doc.t_ganadera}}    "
+  },
+  {
+   "fieldname": "sec_pasivos",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "encabezado",
+   "fieldtype": "Heading",
+   "label": "PASIVOS"
+  },
+  {
+   "fieldname": "deudas_financierasc",
+   "fieldtype": "Table",
+   "label": "Deudas en Entidades Financieras (CONYUGE)",
+   "options": "deudas_financierasc"
+  },
+  {
+   "fieldname": "t_cuota",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_total",
+   "fieldtype": "HTML",
+   "options": "<b> Total Monto: </b>{{doc.t_monto}}    \n<b> Total Cuota: </b>{{doc.t_cuota}}   "
+  },
+  {
+   "fieldname": "t_cuotac",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_totalc",
+   "fieldtype": "HTML",
+   "options": "<b> Total Monto: </b>{{doc.t_montoc}}    \n<b> Total Cuota: </b>{{doc.t_cuotac}}   "
+  },
+  {
+   "fieldname": "t_monto",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "t_montoc",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "deudas_financieras",
+   "fieldtype": "Table",
+   "label": "Deudas en Entidades Financieras (TITULAR)",
+   "options": "deudas_financieras"
+  },
+  {
+   "fieldname": "otras_cuentas",
+   "fieldtype": "Table",
+   "label": "Otras cuentas por Pagar(Tel\u00e9fono, Casas Comerciales o Proveedores))",
+   "options": "otras_cuentas"
+  },
+  {
+   "fieldname": "t_otras_cuentas",
+   "fieldtype": "Currency",
+   "hidden": 1
+  },
+  {
+   "fieldname": "html_otras_cuentas",
+   "fieldtype": "HTML",
+   "options": "<b> Total Otras Cuentas: </b>{{doc.t_otras_cuentas}}    "
   }
  ],
- "modified": "2021-06-13 20:56:36.694939",
+ "modified": "2021-06-14 09:03:21.347304",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "analisis_capital",

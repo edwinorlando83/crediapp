@@ -1,0 +1,74 @@
+{
+ "creation": "2021-06-14 06:53:39.090868",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "institucion",
+  "monto",
+  "plazo",
+  "fecha",
+  "cuota",
+  "saldo"
+ ],
+ "fields": [
+  {
+   "fieldname": "institucion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instituci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "monto",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monto",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "plazo",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Plazo",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de Pago",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "cuota",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cuota",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "saldo",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Saldo",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-14 06:53:39.090868",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "otras_cuentas",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

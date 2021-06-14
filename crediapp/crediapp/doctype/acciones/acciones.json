@@ -1,0 +1,53 @@
+{
+ "creation": "2021-06-13 20:59:37.050899",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entidad",
+  "fecha",
+  "nombre",
+  "valor"
+ ],
+ "fields": [
+  {
+   "fieldname": "entidad",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Entidad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de deposito",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nombre",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre del inversionista",
+   "reqd": 1
+  },
+  {
+   "fieldname": "valor",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Valor de Acciones",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-13 20:59:51.307956",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "acciones",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

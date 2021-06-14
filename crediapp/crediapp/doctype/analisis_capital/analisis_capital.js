@@ -77,6 +77,50 @@ frappe.ui.form.on("electrodomesticos", {
 	}  
 });
 
+frappe.ui.form.on("acciones", {
+	valor(frm, cdt, cdn) {
+		acciones();
+	}  
+});
+
+
+frappe.ui.form.on("ganadera", {
+	valor(frm, cdt, cdn) {
+		ganadera();
+	} ,
+	cantidad(frm, cdt, cdn) {
+		ganadera();
+	} 
+});
+
+frappe.ui.form.on("deudas_financieras", {
+	monto(frm, cdt, cdn) {
+		deudas_financieras();
+	} ,
+	cuota(frm, cdt, cdn) {
+		deudas_financieras();
+	} 
+});
+
+frappe.ui.form.on("deudas_financierasc", {
+	monto(frm, cdt, cdn) {
+		 
+		deudas_financierasc();
+	} ,
+	cuota(frm, cdt, cdn) {
+		deudas_financierasc();
+	} 
+});
+
+frappe.ui.form.on("otras_cuentas", {
+	saldo(frm, cdt, cdn) {
+		 
+		otras_cuentas();
+	}  
+});
+
+
+
 
 /* funciones*/ 
 function suma_caja(frm){
@@ -150,8 +194,7 @@ function vehiculo() {
 function maquinaria_equipo() {
 	var t_total = 0;
 	$.each(cur_frm.doc.maquinaria_equipo, function (i, row) {	 
-		let filat = row.cantidad * row.vunitario;
-		console.log(filat)
+		let filat = row.cantidad * row.vunitario;		 
 		row.total = filat;
 		t_total +=  filat;
 	});
@@ -171,3 +214,68 @@ function electrodomesticos() {
 	cur_frm.refresh_field('t_electrodomesticos');
 	cur_frm.refresh_field("html_electrodomesticos");
 }
+
+
+function acciones() {
+	var t_total = 0;
+	$.each(cur_frm.doc.acciones, function (i, row) {	 
+		t_total += row.valor;
+	});
+	cur_frm.doc.t_acciones = t_total;
+	cur_frm.refresh_field('t_acciones');
+	cur_frm.refresh_field("html_acciones");
+}
+
+function ganadera() {
+	var t_total = 0;
+	$.each(cur_frm.doc.ganadera, function (i, row) {	 
+		let filat = row.cantidad * row.valor;		 
+		row.total = filat;
+		t_total +=  filat;
+	});
+	cur_frm.doc.t_ganadera= t_total;
+	cur_frm.refresh_field('t_ganadera');
+	cur_frm.refresh_field('ganadera');
+	cur_frm.refresh_field("html_ganadera");
+}
+
+function deudas_financieras() {
+	var t_totalm = 0;
+	var t_totalc = 0;
+	$.each(cur_frm.doc.deudas_financieras, function (i, row) {	
+		t_totalm+= row.monto;
+		t_totalc+= row.cuota; 
+	});
+	cur_frm.doc.t_monto= t_totalm;
+	cur_frm.doc.t_cuota= t_totalc;
+	cur_frm.refresh_field('t_monto');
+	cur_frm.refresh_field('t_cuota');
+	cur_frm.refresh_field('html_total');
+	 
+}
+function deudas_financierasc() {
+	var t_totalm = 0;
+	var t_totalc = 0;
+	$.each(cur_frm.doc.deudas_financierasc, function (i, row) {	
+		t_totalm+= row.monto;
+		t_totalc+= row.cuota; 
+	});
+	cur_frm.doc.t_montoc= t_totalm;
+	cur_frm.doc.t_cuotac= t_totalc;
+	cur_frm.refresh_field('t_montoc');
+	cur_frm.refresh_field('t_cuotac');
+	cur_frm.refresh_field('html_totalc');
+	  
+}
+
+
+function otras_cuentas() {
+	var t_total = 0;
+	$.each(cur_frm.doc.otras_cuentas, function (i, row) {	 
+		t_total += row.saldo;
+	});
+	cur_frm.doc.t_otras_cuentas = t_total;
+	cur_frm.refresh_field('t_otras_cuentas');
+	cur_frm.refresh_field("html_otras_cuentas");
+}
+
