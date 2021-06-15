@@ -381,7 +381,7 @@
   },
   {
    "fieldname": "provincia",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Provincia"
   },
   {
@@ -533,7 +533,7 @@
   },
   {
    "fieldname": "emp_provincia",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Provincia"
   },
   {
@@ -631,7 +631,7 @@
   },
   {
    "fieldname": "cony_provincia",
-   "fieldtype": "Data",
+   "fieldtype": "Section Break",
    "label": "Provincia de nacimiento"
   },
   {
@@ -742,7 +742,7 @@
   },
   {
    "fieldname": "prov_emp_cony",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Provincia"
   },
   {
@@ -813,7 +813,7 @@
   }
  ],
  "image_field": "foto",
- "modified": "2021-06-13 16:58:35.162806",
+ "modified": "2021-06-15 06:36:43.513121",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Socio",
