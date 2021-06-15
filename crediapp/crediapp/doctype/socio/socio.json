@@ -141,7 +141,11 @@
   "tel_repr_emp_cony",
   "referencias_telef\u00f3nicas_section",
   "socios_telefonos_familiares",
-  "socios_telefonos_nofamiliares"
+  "socios_telefonos_nofamiliares",
+  "ubicaci\u00f3n_section",
+  "croq_domi",
+  "column_break_138",
+  "croq_empleo"
  ],
  "fields": [
   {
@@ -830,10 +834,29 @@
    "fieldtype": "Table",
    "label": "NO FAMILIARES",
    "options": "socios_telefonos_familiares"
+  },
+  {
+   "fieldname": "ubicaci\u00f3n_section",
+   "fieldtype": "Section Break",
+   "label": "UBICACI\u00d3N"
+  },
+  {
+   "fieldname": "croq_domi",
+   "fieldtype": "Geolocation",
+   "label": "Croquis del Domicilio"
+  },
+  {
+   "fieldname": "croq_empleo",
+   "fieldtype": "Geolocation",
+   "label": "Croquis del Negocio/Empleo"
+  },
+  {
+   "fieldname": "column_break_138",
+   "fieldtype": "Column Break"
   }
  ],
  "image_field": "foto",
- "modified": "2021-06-15 16:11:55.042290",
+ "modified": "2021-06-15 17:44:44.701783",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Socio",
