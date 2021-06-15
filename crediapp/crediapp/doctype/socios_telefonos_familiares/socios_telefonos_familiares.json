@@ -1,0 +1,54 @@
+{
+ "creation": "2021-06-15 16:05:01.366749",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "nombres",
+  "parentesco",
+  "direccion",
+  "telefono"
+ ],
+ "fields": [
+  {
+   "fieldname": "nombres",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Apellidos  y Nombres",
+   "reqd": 1
+  },
+  {
+   "fieldname": "parentesco",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Parentesco",
+   "options": "Parentesco",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Direcci\u00f3n",
+   "reqd": 1
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tel\u00e9fono/Celular",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2021-06-15 16:05:06.120289",
+ "modified_by": "Administrator",
+ "module": "crediapp",
+ "name": "socios_telefonos_familiares",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

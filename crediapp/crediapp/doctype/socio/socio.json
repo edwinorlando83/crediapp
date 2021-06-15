@@ -138,7 +138,10 @@
   "column_break_129",
   "carg_emp_cony",
   "column_break_131",
-  "tel_repr_emp_cony"
+  "tel_repr_emp_cony",
+  "referencias_telef\u00f3nicas_section",
+  "socios_telefonos_familiares",
+  "socios_telefonos_nofamiliares"
  ],
  "fields": [
   {
@@ -810,10 +813,27 @@
   {
    "fieldname": "column_break_131",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "referencias_telef\u00f3nicas_section",
+   "fieldtype": "Section Break",
+   "label": "REFERENCIAS TELEF\u00d3NICAS"
+  },
+  {
+   "fieldname": "socios_telefonos_familiares",
+   "fieldtype": "Table",
+   "label": "FAMILIARES",
+   "options": "socios_telefonos_familiares"
+  },
+  {
+   "fieldname": "socios_telefonos_nofamiliares",
+   "fieldtype": "Table",
+   "label": "NO FAMILIARES",
+   "options": "socios_telefonos_familiares"
   }
  ],
  "image_field": "foto",
- "modified": "2021-06-15 11:38:17.290031",
+ "modified": "2021-06-15 16:11:55.042290",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Socio",
