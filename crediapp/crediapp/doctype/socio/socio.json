@@ -386,12 +386,12 @@
   },
   {
    "fieldname": "canton",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Cant\u00f3n"
   },
   {
    "fieldname": "parroquia",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Parroquia"
   },
   {
@@ -538,12 +538,12 @@
   },
   {
    "fieldname": "emp_canton",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Cant\u00f3n"
   },
   {
    "fieldname": "emp_parroquia",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Parroquia"
   },
   {
@@ -747,12 +747,12 @@
   },
   {
    "fieldname": "cant_emp_cony",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Cant\u00f3n"
   },
   {
    "fieldname": "parr_emp_cony",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "label": "Parroquia"
   },
   {
@@ -813,7 +813,7 @@
   }
  ],
  "image_field": "foto",
- "modified": "2021-06-15 06:36:43.513121",
+ "modified": "2021-06-15 11:38:17.290031",
  "modified_by": "Administrator",
  "module": "crediapp",
  "name": "Socio",

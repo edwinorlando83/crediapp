@@ -9,11 +9,28 @@ frappe.ui.form.on('Socio', {
 
 		get_provincia(frm);
 		if (frm.doc.provincia) get_cantones(frm.doc.provincia, frm, "canton");
-		if (frm.doc.canton ) get_parroquias (frm.doc.canton , frm);
+		if (frm.doc.canton ) get_parroquias (frm.doc.canton , frm, "parroquia");
 	},
 	provincia:function(frm){
 		get_cantones(frm.doc.provincia, frm, "canton");
 	},
+	canton:function(frm){
+		get_parroquias(frm.doc.canton, frm, "parroquia");
+	},
+	emp_provincia:function(frm){
+		get_cantones(frm.doc.emp_provincia, frm, "emp_canton");
+	},
+	emp_canton:function(frm){
+		get_parroquias(frm.doc.emp_canton, frm, "emp_parroquia");
+	},
+	prov_emp_cony:function(frm){
+		get_cantones(frm.doc.prov_emp_cony, frm, "cant_emp_cony");
+	},
+	cant_emp_cony:function(frm){
+		get_parroquias(frm.doc.cant_emp_cony, frm, "parr_emp_cony");
+	},
+	
+
 	onload_post_render: function (frm) {
 		controlSoloNumeroEntero(frm.fields_dict.cedula);
 		controlSoloNumeroEntero(frm.fields_dict.cedulaconyuge);
@@ -96,13 +113,13 @@ function get_cantones(incod_prov, frm, control) {
 	});
   }
 
-  function get_parroquias(incod_prov, frm) {
+  function get_parroquias(incod_prov, frm, control) {
 	frappe.call({
 	  method: "crediapp.crediapp.doctype.dpa.dpa.get_parroquia",
 	  args: { cod_can: incod_prov },
 	  callback: (r) => {
-		frm.set_df_property("parroquia", "options", r.message);
-		frm.refresh_field("parroquia");
+		frm.set_df_property(control, "options", r.message);
+		frm.refresh_field(control);
 	  },
 	});
   }
