@@ -10,7 +10,13 @@ app_icon = "octicon octicon-file-directory"
 app_color = "grey"
 app_email = "edwin_orlando83@hotmail.com"
 app_license = "MIT"
+app_logo_url = "/assets/crediapp/imagenes/logo.png"
 
+
+website_context = {
+"favicon": "/assets/crediapp/logo.png",
+"splash_image": "/assets/crediapp/imagenes/logo.png"
+}
 # Includes in <head>
 # ------------------
 
